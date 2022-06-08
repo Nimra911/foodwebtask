@@ -1,0 +1,63 @@
+.signup__form
+{
+box-shadow: 0 0 1.5rem 0 $color-green;
+width: 35rem;
+height: 35rem;
+margin-top: -5rem;
+margin-left: 25%;
+background-color: $color-green;
+// @include respond(tab-land)     //900 1rem equal 8px    600-900px tablet portrait 8/16
+//     {
+//         margin-left: 8rem;
+//     }
+    @include respond(tab-port)     //900 1rem equal 8px    600-900px tablet portrait 8/16
+    {
+        margin-left: 1rem;
+        width: 30rem;
+    }
+    @include respond(phone)     //900 1rem equal 8px    600-900px tablet portrait 8/16
+    {
+        margin: 4rem auto;
+      
+    }
+   
+&-button
+{
+    width: 18rem;
+    height: 3rem;
+    margin-top: 3rem;
+    border: 1px solid $color-white;
+    background-color: $color-white;
+    margin-left: 1rem;
+    color: $color-green;
+    &:hover
+    {
+        transform: scale(1.06);
+        z-index: 100;
+        box-shadow: 0 3px 6px 0 rgba($color-black ,.6);
+    }  
+}
+&-input{
+
+position: inherit;
+top: 7rem;
+left: 7rem;
+&--adjust {
+    border: hidden;
+    border-bottom: 1px solid $color-white;
+    width: 22rem;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color:$color-green;
+    // @include respond(tab-port)
+    // {
+    //     width: 19rem;
+    // }
+    &::placeholder
+    {
+color: $color-white;
+    }
+}
+}
+
+}

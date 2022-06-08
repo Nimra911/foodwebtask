@@ -1,0 +1,90 @@
+// ............header.......
+
+.icon {
+    display: flex;
+    width: 9%;
+    padding-top: 1.5rem;
+    
+    justify-content: space-between;
+    @include respond(phone)     //       1rem equal 9px 900-1200px tablet landscape 9/16
+    {
+        
+      display: none;
+    }
+   
+    & img {
+        width: 3rem;
+        margin-left: 1rem;
+        object-fit: contain
+    }
+  
+
+}
+.product__icon
+{
+width: 42%;
+top: -1rem;
+    left: 17rem;
+
+    border-left: 2.5px solid $color-white;
+    // @include respond (tab-port)
+    // {
+    //     left:  60%;
+    // }
+    // @include respond (phone-small)
+    // {
+    //     left:  57%;
+    // }
+img
+{
+    width:2.5rem;
+}
+&--1
+{
+border-right: 2.5px solid $color-white;
+padding-right: 0.5rem;
+
+}
+
+}
+.mobile
+{
+    width:30rem;
+    height: 45rem;
+   
+     @include respond(tab-port)     //       1rem equal 9px 900-1200px tablet landscape 9/16
+     {
+         width:25rem;
+         height: 35rem;
+    } 
+    // @include respond(phone-small)
+    // {
+    //     width: 20rem;
+    // }
+    // @include respond(phone)     //       1rem equal 9px 900-1200px tablet landscape 9/16
+    // {
+    //     width:20rem;
+    // }
+    &__1
+    
+    {
+        
+        @include respond(tab-port)
+        {
+            margin-top: 2rem;
+        }
+    }
+
+    &__2
+   
+    {
+       
+        margin-top: 2rem;
+        margin-left: -3rem;
+    }
+
+}
+.icon-adjust
+{
+    width: 3rem;
+}

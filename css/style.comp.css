@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* equal to 1rem  that is 10px according to my setting  */ }
+
+body {
+  box-sizing: border-box;
+  /* only for now change it later */
+  font-family: 'Times New Roman', Times, serif;
+  /* only for now change it later */
+  color: black; }
+
+.header {
+  width: 100wh;
+  background-color: red; }
